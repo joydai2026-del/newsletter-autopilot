@@ -1,0 +1,52 @@
+{
+  "stories": [
+    {
+      "id": "q-001",
+      "url": "https://example.com/posts/context-windows",
+      "headline": "A longer context window is not a longer memory",
+      "summary": "A walk through why retrieval quality collapses well before the advertised token limit, and what that means for anyone stuffing a whole codebase into a prompt.",
+      "comment": "The benchmark everyone quotes measures recall of a single planted fact. Real work asks for synthesis across twenty.",
+      "image": "https://example.com/img/context-window.png"
+    },
+    {
+      "id": "q-002",
+      "url": "https://example.com/posts/idempotency-keys",
+      "headline": "Idempotency keys, explained without the payments jargon",
+      "summary": "The same idea that stops a card being charged twice stops a newsletter being mailed twice. One durable record, written before the call, read after it.",
+      "comment": "If your retry logic cannot answer 'did the last attempt land', it is not retry logic, it is a coin flip.",
+      "image": "https://example.com/img/idempotency.png"
+    },
+    {
+      "id": "q-003",
+      "url": "https://example.com/posts/undocumented-apis",
+      "headline": "Reading a product's own frontend to learn its API",
+      "summary": "When a platform ships no public write API, its web app is still calling something. A field guide to recovering those routes responsibly, and to knowing when not to.",
+      "comment": "The recovery is the easy half. Deciding what happens when the route changes underneath you is the engineering.",
+      "image": "https://example.com/img/frontend-bundles.png"
+    },
+    {
+      "id": "q-004",
+      "url": "https://example.com/posts/watchdogs",
+      "headline": "Your monitoring lives inside the thing it monitors",
+      "summary": "A short catalogue of checks that go quiet at exactly the moment they are needed, and the one structural fix: deploy the watchdog somewhere the failure cannot reach.",
+      "comment": "Exit code zero is a claim about a process, not about a reader's inbox.",
+      "image": "https://example.com/img/watchdog.png"
+    },
+    {
+      "id": "q-005",
+      "url": "https://example.com/posts/blank-renders",
+      "headline": "The render succeeded and the image is empty",
+      "summary": "Correct dimensions, a green exit code, a file on disk, and nothing visible in the middle. Why every render pipeline needs an output-side assertion.",
+      "comment": "Checking that the asset loaded and checking that the asset looks right are two different tests.",
+      "image": "https://example.com/img/blank-render.png"
+    },
+    {
+      "id": "q-006",
+      "url": "https://example.com/posts/queue-depth",
+      "headline": "A sixth story, held back for tomorrow",
+      "summary": "The queue is deliberately deeper than one issue so the selector has something to choose from. This one demonstrates that only the configured number is taken.",
+      "comment": "",
+      "image": "https://example.com/img/queue-depth.png"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Run artifacts: state, locks, ledgers, rendered covers, the mock platform's posts
+.autopilot/
+*.lock
+
+# Never commit a credential or a policy file that carries one
+.env
+*.env
+secrets.toml

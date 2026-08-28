@@ -1,0 +1,33 @@
+# Everything operational is here, not in the code that emails people.
+# Change the send slot, the cutoff, the retry ceiling, or the issue shape
+# without touching a single stage.
+
+publication_name = "Example Daily"
+home = ".autopilot"
+
+# The public archive the watchdog reads. It must be readable WITHOUT any
+# credential the pipeline holds: the watchdog's whole job is to be independent.
+archive_url = "https://example.com/api/v1/archive?limit=12"
+
+[policy]
+timezone = "America/New_York"
+publish_at = "09:00"
+publish_days = ["mon", "tue", "wed", "thu", "fri"]
+
+# No remote write inside this many minutes before the slot. Past it the run
+# parks rather than racing its own send.
+cutoff_minutes = 10
+
+# A same-day recovery still releases BY SCHEDULING, this many minutes out.
+recovery_lead_minutes = 5
+max_recovery_attempts = 3
+
+# A lock this old whose holder cannot be identified is treated as abandoned.
+# An identifiable live holder is never reclaimed on age alone.
+stale_lock_seconds = 1800
+
+stories_per_issue = 5
+images_per_issue = 5
+forbid_em_dashes = true
+
+watchdog_grace_minutes = 60
